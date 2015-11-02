@@ -1,5 +1,9 @@
 # Display a lovely welcome message
-figlet -w200 "$HOSTNAME"
+if hash figlet 2>/dev/null; then
+	figlet -w200 "$HOSTNAME"
+else
+	echo "Install 'figlet' for a lovely welcome banner.";
+fi
 echo -e "ϞϞ(๑⚈ ․̫ ⚈๑)∩\\n"
 echo -e "Today:   $(date '+%d-%m-%Y %H:%M:%S')"
 echo -e "Uptime: $(uptime)\\n"
