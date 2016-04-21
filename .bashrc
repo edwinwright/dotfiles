@@ -35,7 +35,7 @@ export GREP_COLOR="34;47"
 export GREP_OPTIONS="--color=auto"
 
 # Set less vars
-export LESS='-MN'
+export LESS='-MNr'
 
 
 # Add color to the terminal
